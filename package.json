@@ -1,0 +1,27 @@
+{
+  "name": "tauqeer-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@sanity/image-url": "^1.0.2",
+    "@sanity/vision": "^3.57.0",
+    "next": "^14.2.35",
+    "next-sanity": "^9.4.4",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "sanity": "^3.57.0",
+    "styled-components": "^6.1.11"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.4",
+    "@types/node": "^20.14.11",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0"
+  }
+}
