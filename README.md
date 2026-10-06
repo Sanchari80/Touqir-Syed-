@@ -8,7 +8,7 @@ your content in the cloud; you just log in at `/studio` and edit.
 
 1. https://www.sanity.io -এ ফ্রি অ্যাকাউন্ট বানান, একটা নতুন প্রজেক্ট create করুন।
 2. Project Settings থেকে **Project ID** কপি করুন।
-3. এই ফোল্ডারে `.env.example` কে `.env.local` নামে কপি করে ওই Project ID বসান।
+3. এই ফোল্ডারে `.env.local` ফাইল তৈরি করে `NEXT_PUBLIC_SANITY_PROJECT_ID`-এ Project ID এবং `NEXT_PUBLIC_SANITY_DATASET=production` বসান। `.env.local` Git-এ commit করবেন না।
 4. `npm install` তারপর `npm run dev` চালিয়ে http://localhost:3000 দেখুন।
 5. Admin panel: http://localhost:3000/studio — এখান থেকে নতুন Case Study, Page, Stat upload করবেন।
 6. GitHub-এ push করে Vercel-এ import করুন, একই environment variables Vercel-এর Settings → Environment Variables-এ বসিয়ে দিন। Deploy হয়ে গেলে `your-site.vercel.app/studio` থেকেই সব আপডেট করতে পারবেন — কোনো database লাগবে না।
@@ -37,8 +37,8 @@ your content in the cloud; you just log in at `/studio` and edit.
    - **Case Studies** — one entry per campaign, with metrics.
    - **Pages I Manage** — the Facebook pages list.
    - **Capabilities** — the two-column skills grid.
-   The homepage reads directly from these, so anything you publish in Studio shows up on
-   the live site within ~30 seconds (no redeploy needed).
+   The homepage reads directly from these. While the page is open, newly published content
+   appears automatically within about 15 seconds (no redeploy needed).
 
 ## Deploy to Vercel
 
